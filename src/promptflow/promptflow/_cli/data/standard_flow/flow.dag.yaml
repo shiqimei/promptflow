@@ -1,3 +1,5 @@
+environment:
+  python_requirements_txt: requirements.txt
 inputs:
   text:
     type: string
@@ -20,5 +22,3 @@ nodes:
     path: hello.py
   inputs:
     input1: ${hello_prompt.output}
-environment:
-  python_requirements_txt: requirements.txt
